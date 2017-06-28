@@ -117,7 +117,7 @@ median(stepsByDate$steps)
 ## [1] 10395
 ```
 
-#####Answer: the mean of steps taken per day is 9354.23, the median is 10395
+##### Answer: the mean of steps taken per day is 9354.23, the median is 10395
 
 ## 3. What is the average daily activity pattern?
 a. Make a time series plot (i.e. type = "l") of the 5-minute interval (x-axis) and the average number of steps taken, averaged across all days (y-axis)
@@ -197,9 +197,9 @@ stepSumByInterval[104,]
 ## 104      515 10927
 ```
 
-#####Interval 515 translate to the interval starts at the 515th minute of the day, which is the interval starts at 08:35 AM
+##### Interval 515 translate to the interval starts at the 515th minute of the day, which is the interval starts at 08:35 AM
 
-#####Answer: the maximum of average steps of 5- minute interval occured on 08:35 AM
+##### Answer: the maximum of average steps of 5- minute interval occured on 08:35 AM
 
 ## 4. Imputing missing values
 
@@ -239,7 +239,7 @@ colSums(x)
 ##    steps     date interval 
 ##     2304        0        0
 ```
-#####Answer: There are 2304 rows of NA in the activity data set. They are missing the value of steps.
+##### Answer: There are 2304 rows of NA in the activity data set. They are missing the value of steps.
 
 b. Devise a strategy for filling in all of the missing values in the data set. The strategy does not need to be sophisticated. For example, you could use the mean/median for that day, or the mean for that 5-minute interval, etc.
 
@@ -313,7 +313,7 @@ hist(stepsByDateFilled$steps,col = 'blue',breaks = length(stepsByDateFilled$step
 
 ![](PA1_template_files/figure-html/unnamed-chunk-26-1.png)<!-- -->
  
-#####Answer: No difference.Because I had na.rm =T in Question 2 and it happens that all the NA exists in days that the sum of steps is zero.
+##### Answer: No difference.Because I had na.rm =T in Question 2 and it happens that all the NA exists in days that the sum of steps is zero.
 
 Please see the following code for proof.
 
@@ -459,4 +459,4 @@ summary(stepSumByIntervalByWeekday[(stepSumByIntervalByWeekday$isWeekday=='weeke
 ##                3rd Qu.:1766.2   3rd Qu.:1058.0  
 ##                Max.   :2355.0   Max.   :2450.0
 ```
-#####Answer: The weekday and weekend activity patterns are different. On weekdays,subject is more active with higher mean of step. However, activity is more spead out during weekends and concentrated in the morning on weekdays.
+##### Answer: The weekday and weekend activity patterns are different. On weekdays,subject is more active with higher mean of step. However, activity is more spead out during weekends and concentrated in the morning on weekdays.
